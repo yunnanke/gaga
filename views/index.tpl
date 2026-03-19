@@ -1,29 +1,63 @@
-% rebase('layout.tpl', title='Home Page', year=year)
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Карта мест</title>
 
-<div class="jumbotron">
-    <h1>Bottle</h1>
-    <p class="lead">Bottle is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<link rel="stylesheet" href="/static/css/style.css">
+
+<link rel="stylesheet"
+ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>🎣 Помощник рыбака</h1>
+<nav>
+<a href="/">Карта</a>
+<a href="/encyclopedia">Энциклопедия</a>
+</nav>
+</header>
+
+<div id="map"></div>
+
+<div id="spotModal" class="modal">
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2>Добавить место</h2>
+
+<form id="spotForm">
+
+<select id="fishType">
+<option>Окунь</option>
+<option>Щука</option>
+<option>Карп</option>
+<option>Лещ</option>
+<option>Судак</option>
+<option>Сом</option>
+</select>
+
+<textarea id="comment" placeholder="Комментарий"></textarea>
+
+<input type="number" id="lat" step="any" placeholder="Широта">
+<input type="number" id="lng" step="any" placeholder="Долгота">
+
+<button type="submit">Сохранить</button>
+
+</form>
+
+</div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Bottle gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>
+<footer>© 2026</footer>
+
+<script src="/static/js/map.js"></script>
+
+</body>
+</html>
