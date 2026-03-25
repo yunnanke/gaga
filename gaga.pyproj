@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>gaga</Name>
     <RootNamespace>gaga</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,7 +39,6 @@
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
-    <Folder Include="static\css\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -48,7 +47,7 @@
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
-    <Content Include="static\css\style.css">
+    <Content Include="static\content\style.css">
       <SubType>Code</SubType>
     </Content>
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
@@ -72,6 +71,9 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\error.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\fish_detail.tpl">
       <SubType>Code</SubType>
     </Content>
