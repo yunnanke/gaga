@@ -72,6 +72,9 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\fish_detail.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\index.tpl" />
     <Content Include="views\layout.tpl" />
     <Content Include="views\locations.tpl">
