@@ -41,7 +41,6 @@
     <Folder Include="static\images\" />
     <Folder Include="static\js\" />
     <Folder Include="templates\" />
-    <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -55,21 +54,6 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="templates\index.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\contact.tpl" />
-    <Content Include="views\error.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\fish_detail.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\index.tpl" />
-    <Content Include="views\layout.tpl" />
-    <Content Include="views\locations.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\seasons.tpl">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>
