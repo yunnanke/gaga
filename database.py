@@ -1,6 +1,10 @@
-﻿# Энциклопедия рыбалки - база данных о рыбе, местах и сезонах
+# -*- coding: utf-8 -*-
+# Fishing Encyclopedia - Database module
+# Data content is in Russian (this is intentional - it's the encyclopedia content)
 
-# ДАННЫЕ О РЫБЕ
+# ============================================================================
+# FISH DATA
+# ============================================================================
 
 fish_data = [
     {
@@ -205,7 +209,13 @@ fish_data = [
     }
 ]
 
+<<<<<<< HEAD
 # ДАННЫЕ О МЕСТАХ ЛОВЛИ
+=======
+# ============================================================================
+# LOCATIONS DATA
+# ============================================================================
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
 
 locations_data = [
     {
@@ -262,7 +272,13 @@ locations_data = [
     }
 ]
 
+<<<<<<< HEAD
 # ДАННЫЕ О СЕЗОНАХ
+=======
+# ============================================================================
+# SEASONS DATA
+# ============================================================================
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
 
 seasons_data = {
     "spring": {
@@ -315,24 +331,41 @@ seasons_data = {
     }
 }
 
+<<<<<<< HEAD
 # ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 
 def get_fish_by_id(fish_id):
     """Получить рыбу по ID"""
+=======
+# ============================================================================
+# HELPER FUNCTIONS
+# ============================================================================
+
+def get_fish_by_id(fish_id):
+    """Get fish by ID"""
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
     for fish in fish_data:
         if fish["id"] == fish_id:
             return fish
     return None
 
 def get_fish_by_name(fish_name):
+<<<<<<< HEAD
     """Получить рыбу по имени"""
+=======
+    """Get fish by name"""
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
     for fish in fish_data:
         if fish["name"].lower() == fish_name.lower():
             return fish
     return None
 
 def get_fish_by_season(season):
+<<<<<<< HEAD
     """Получить список рыб для определенного сезона"""
+=======
+    """Get list of fish for a specific season"""
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
     result = []
     for fish in fish_data:
         if season.lower() in fish["season"].lower():
@@ -340,7 +373,11 @@ def get_fish_by_season(season):
     return result
 
 def get_fish_by_location(location_type):
+<<<<<<< HEAD
     """Получить рыб, которые водятся в определенном месте"""
+=======
+    """Get fish that live in a specific location type"""
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
     result = []
     for loc in locations_data:
         if loc["name"].lower() == location_type.lower():
@@ -351,7 +388,11 @@ def get_fish_by_location(location_type):
     return result
 
 def search_fish(query):
+<<<<<<< HEAD
     """Поиск рыбы по названию"""
+=======
+    """Search fish by name or description"""
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
     result = []
     query = query.lower()
     for fish in fish_data:
@@ -360,11 +401,20 @@ def search_fish(query):
     return result
 
 def get_all_fish_names():
+<<<<<<< HEAD
     """Получить список всех названий рыб"""
     return [fish["name"] for fish in fish_data]
 
 
 # СТАТИСТИКА
+=======
+    """Get list of all fish names"""
+    return [fish["name"] for fish in fish_data]
+
+# ============================================================================
+# STATISTICS
+# ============================================================================
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
 
 statistics = {
     "total_fish_species": len(fish_data),
@@ -372,4 +422,8 @@ statistics = {
     "total_seasons": len(seasons_data),
     "most_popular_fish": "Щука",
     "best_fishing_season": "Осень"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dc2b27a9e9c4267acd5b17ab66fba0ddcd8ebb7a
