@@ -11,7 +11,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <h1 class="logo">🎣 Энциклопедия рыбалки</h1>
+            <h1 class="logo">🎣 Помощник рыбака</h1>
             <nav class="nav">
                 <a href="#fish" class="nav-link">Рыбы</a>
                 <a href="#locations" class="nav-link">Места</a>
@@ -53,7 +53,9 @@
                 <div class="cards-grid">
                     % for loc in locations:
                     <div class="card" data-modal="location-{{loc['id']}}">
-                        <div class="card-image">🗺️</div>
+                        <div class="card-image">
+                            <img src="/static/images/{{loc['image']}}" alt="{{loc['name']}}" onerror="this.src='/static/images/placeholder.jpg'">
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">{{loc['name']}}</h3>
                             <p class="card-text">{{loc['description']}}</p>
@@ -70,7 +72,9 @@
                 <div class="cards-grid">
                     % for key, season in seasons.items():
                     <div class="card" data-modal="season-{{key}}">
-                        <div class="card-image">📅</div>
+                        <div class="card-image">
+                            <img src="/static/images/{{season['image']}}" alt="{{season['name']}}" onerror="this.src='/static/images/placeholder.jpg'">
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">{{season['name']}}</h3>
                             <p class="card-text">{{season['description'][:80]}}...</p>
@@ -96,7 +100,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> Энциклопедия рыбалки</p>
+            <p>&copy; <span id="year"></span> Помощник рыбака</p>
         </div>
     </footer>
 

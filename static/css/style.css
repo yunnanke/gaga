@@ -36,7 +36,7 @@ body {
         background-image: url('/static/images/bg.png');
         background-repeat: repeat;
         /* Прозрачность от 0.0 до 1.0 */
-        opacity: 0.3;
+        opacity: 0.1;
         /* Чтобы клики проходили сквозь фон */
         pointer-events: none;
         /* Убираем фон на задний план */
