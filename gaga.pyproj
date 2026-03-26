@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>gaga</Name>
     <RootNamespace>gaga</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,54 +37,35 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
-    <Folder Include="static\content\" />
-    <Folder Include="static\fonts\" />
-    <Folder Include="static\scripts\" />
-    <Folder Include="views\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\js\" />
+    <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="static\content\bootstrap.css" />
-    <Content Include="static\content\bootstrap.min.css" />
-    <Content Include="static\content\site.css" />
-    <Content Include="static\content\style.css">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="static\scripts\bootstrap.js" />
-    <Content Include="static\scripts\bootstrap.min.js" />
-    <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="static\scripts\jquery-1.10.2.js" />
-    <Content Include="static\scripts\jquery-1.10.2.min.js" />
-    <Content Include="static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="static\scripts\jquery.validate-vsdoc.js" />
-    <Content Include="static\scripts\jquery.validate.js" />
-    <Content Include="static\scripts\jquery.validate.min.js" />
-    <Content Include="static\scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="static\scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="static\scripts\modernizr-2.6.2.js" />
-    <Content Include="static\scripts\respond.js" />
-    <Content Include="static\scripts\respond.min.js" />
-    <Content Include="static\scripts\_references.js" />
-    <Content Include="views\about.tpl" />
-    <Content Include="views\contact.tpl" />
-    <Content Include="views\error.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\fish_detail.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\index.tpl" />
-    <Content Include="views\layout.tpl" />
-    <Content Include="views\locations.tpl">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\seasons.tpl">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="static\css\style.css" />
+    <Content Include="static\images\placeholder.jpg" />
+    <Content Include="static\images\голавль.png" />
+    <Content Include="static\images\густера.png" />
+    <Content Include="static\images\елец.png" />
+    <Content Include="static\images\жерех.png" />
+    <Content Include="static\images\карась.png" />
+    <Content Include="static\images\карп.png" />
+    <Content Include="static\images\лещ.png" />
+    <Content Include="static\images\линь.png" />
+    <Content Include="static\images\налим.png" />
+    <Content Include="static\images\окунь.png" />
+    <Content Include="static\images\плотва.png" />
+    <Content Include="static\images\сом.png" />
+    <Content Include="static\images\судак.png" />
+    <Content Include="static\images\форель.png" />
+    <Content Include="static\images\хариус.png" />
+    <Content Include="static\images\чехонь.png" />
+    <Content Include="static\images\щука.png" />
+    <Content Include="static\images\язь.png" />
+    <Content Include="static\js\main.js" />
+    <Content Include="templates\index.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env3\">
