@@ -45,6 +45,7 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="static\css\style.css" />
+    <Content Include="static\images\bg.png" />
     <Content Include="static\images\placeholder.jpg" />
     <Content Include="static\images\голавль.png" />
     <Content Include="static\images\густера.png" />
@@ -62,7 +63,7 @@
     <Content Include="static\images\форель.png" />
     <Content Include="static\images\хариус.png" />
     <Content Include="static\images\чехонь.png" />
-    <Content Include="static\images\shuka.png" />
+    <Content Include="static\images\щука.png" />
     <Content Include="static\images\язь.png" />
     <Content Include="static\js\main.js" />
     <Content Include="templates\index.tpl" />

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -33,7 +34,9 @@
                 <div class="cards-grid">
                     % for f in fish:
                     <div class="card" data-modal="fish-{{f['id']}}">
-                        <div class="card-image">🐟</div>
+                        <div class="card-image">
+                            <img src="/static/images/{{f['image']}}" alt="{{f['name']}}" onerror="this.src='/static/images/placeholder.jpg'">
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">{{f['name']}}</h3>
                             <p class="card-text">{{f['description'][:80]}}...</p>
