@@ -50,7 +50,7 @@ python3 app.py
 ## Авторы
 
 *   **Голубев Егор** — *Стилизация* — https://github.com/shirley0sh
-*   **Голубев Егор** — *html* — https://github.com/yunnanke
+*   **Матвеева Юнна** — *html* — https://github.com/yunnanke
 
 ## Лицензия.
 Лицензия отсутствует
