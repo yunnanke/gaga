@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>gaga</Name>
     <RootNamespace>gaga</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,18 +44,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="static\css\style.css">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="static\images\placeholder.jpg">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="static\js\main.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="templates\index.tpl">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="static\css\style.css" />
+    <Content Include="static\images\bg.png" />
+    <Content Include="static\images\placeholder.jpg" />
+    <Content Include="static\images\весна.png" />
+    <Content Include="static\images\голавль.png" />
+    <Content Include="static\images\густера.png" />
+    <Content Include="static\images\елец.png" />
+    <Content Include="static\images\жерех.png" />
+    <Content Include="static\images\зима.png" />
+    <Content Include="static\images\карась.png" />
+    <Content Include="static\images\карп.png" />
+    <Content Include="static\images\лето.png" />
+    <Content Include="static\images\лещ.png" />
+    <Content Include="static\images\линь.png" />
+    <Content Include="static\images\налим.png" />
+    <Content Include="static\images\озеро.png" />
+    <Content Include="static\images\окунь.png" />
+    <Content Include="static\images\осень.png" />
+    <Content Include="static\images\плотва.png" />
+    <Content Include="static\images\река.png" />
+    <Content Include="static\images\сом.png" />
+    <Content Include="static\images\судак.png" />
+    <Content Include="static\images\форель.png" />
+    <Content Include="static\images\хариус.png" />
+    <Content Include="static\images\чехонь.png" />
+    <Content Include="static\images\щука.png" />
+    <Content Include="static\images\язь.png" />
+    <Content Include="static\js\main.js" />
+    <Content Include="templates\index.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env3\">

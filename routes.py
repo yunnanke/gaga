@@ -1,5 +1,12 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+<<<<<<< HEAD
+"""
+Fishing Encyclopedia - Routes Module
+All HTTP handlers and application logic
+"""
+=======
 """Fishing Encyclopedia - Routes Module"""
+>>>>>>> golubevBranch
 
 from bottle import Bottle, route, template, request, static_file, HTTPResponse
 import json

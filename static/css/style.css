@@ -1,4 +1,3 @@
-
 /* ===== RESET & BASE ===== */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -21,12 +20,28 @@
 
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg-dark);
+    background-color: #000000;
     color: var(--text);
     line-height: 1.6;
     min-height: 100vh;
 }
-
+    body::before {
+        content: "";
+        position: fixed; /* Фиксируем, чтобы фон был на весь экран */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Ваша картинка и замощение */
+        background-image: url('/static/images/bg.png');
+        background-repeat: repeat;
+        /* Прозрачность от 0.0 до 1.0 */
+        opacity: 0.1;
+        /* Чтобы клики проходили сквозь фон */
+        pointer-events: none;
+        /* Убираем фон на задний план */
+        z-index: -1;
+    }
 .container {
     max-width: 1200px;
     margin: 0 auto;
