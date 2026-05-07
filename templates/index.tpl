@@ -16,6 +16,7 @@
                 <a href="#fish" class="nav-link">Рыбы</a>
                 <a href="#locations" class="nav-link">Места</a>
                 <a href="#seasons" class="nav-link">Сезоны</a>
+                <a href="/articles" class="nav-link-page">Полезные статьи</a>
             </nav>
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Поиск рыбы..." autocomplete="off">
@@ -107,7 +108,6 @@
     <!-- Scripts -->
     <script src="/static/js/main.js"></script>
     <script>
-        // Pass data to JS
         window.APP_DATA = {
             fish: {{!json.dumps(fish, ensure_ascii=False)}},
             locations: {{!json.dumps(locations, ensure_ascii=False)}},

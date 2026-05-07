@@ -18,7 +18,8 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>gaga</Name>
     <RootNamespace>gaga</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <WebBrowserPort>8080</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +46,7 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="static\css\style.css" />
+    <Content Include="static\css\style_art.css" />
     <Content Include="static\images\bg.png" />
     <Content Include="static\images\placeholder.jpg" />
     <Content Include="static\images\весна.png" />
@@ -72,9 +74,30 @@
     <Content Include="static\images\щука.png" />
     <Content Include="static\images\язь.png" />
     <Content Include="static\js\main.js" />
+    <Content Include="templates\articles.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="templates\index.tpl" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>3.11</Version>
+      <Description>env1 (Python 3.11)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env2\">
+      <Id>env2</Id>
+      <Version>3.11</Version>
+      <Description>env2 (Python 3.11 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env3\">
       <Id>env3</Id>
       <Version>3.14</Version>

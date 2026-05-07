@@ -1,13 +1,4 @@
 # -*- coding: utf-8 -*-
-<<<<<<< HEAD
-"""
-Fishing Encyclopedia - Routes Module
-All HTTP handlers and application logic
-"""
-=======
-"""Fishing Encyclopedia - Routes Module"""
->>>>>>> golubevBranch
-
 from bottle import Bottle, route, template, request, static_file, HTTPResponse
 import json
 import os
@@ -21,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-# ВАЖНО: Указываем Bottle где искать шаблоны
+# Указываем Bottle где искать шаблоны
 from bottle import TEMPLATE_PATH
 TEMPLATE_PATH.insert(0, TEMPLATES_DIR)
 
@@ -59,6 +50,10 @@ def seasons_catalog():
     return template('seasons',
                    title='Сезонность рыбалки',
                    seasons=database.seasons_data)
+
+@app.route('/articles')
+def articles_page():
+      return template('articles', title='Полезные статьи')
 
 # ============================================================================
 # API ENDPOINTS
