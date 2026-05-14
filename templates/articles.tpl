@@ -18,10 +18,7 @@
                 <a href="#tips" class="nav-link">Подсказки</a>
                 <a href="/" class="nav-home">На главную</a>
             </nav>
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Поиск рыбы..." autocomplete="off">
-                <div id="searchResults" class="search-results"></div>
-            </div>
+            
         </div>
     </header>
 
@@ -61,7 +58,11 @@
                             <div class="hero-feature-image">
                                 <img src="/static/images/река.png" alt="Рыбалка на реке" onerror="this.src='/static/images/озеро.png'">
                             </div>
-                            <h2>Как выбрать место ловли на незнакомом водоеме</h2>
+                            <h2>
+                                <a href="https://www.ohotniki.ru/fishing/method/article/2012/06/04/635628-vyibor-mesta-lovli-.html">    
+                                    Как выбрать место ловли на незнакомом водоеме
+                                </a>
+                            </h2>
                             <p>
                                 Разбор берегового рельефа, течения, глубины, ветра и точек стоянки рыбы.
                                 Хорошая отправная статья перед любой поездкой.
@@ -84,7 +85,11 @@
                                 <span class="meta-chip">Тактика</span>
                                 <span class="meta-chip">Береговая ловля</span>
                             </div>
-                            <h3 class="card-title">Как выбрать перспективную точку на реке</h3>
+                            <h3 class="card-title">
+                                <a href="https://hsn.su/info/fidernaya_rybalka_rabochie_sposoby_poiska_perspektivnoy_tochki_lovli_na_reke/">
+                                    Как выбрать перспективную точку на реке
+                                </a>
+                            </h3>
                             <p class="card-text">
                                 На что смотреть в первую очередь: свалы, обратки, границы струи, нависающие кусты и участки с разной скоростью течения.
                             </p>
@@ -109,7 +114,11 @@
                                 <span class="meta-chip">Сезонность</span>
                                 <span class="meta-chip">Лето</span>
                             </div>
-                            <h3 class="card-title">Летняя рыбалка: как искать рыбу в жару</h3>
+                            <h3 class="card-title">
+                                <a href="https://dzen.ru/a/aDYUWFT7tXcFEt4A">
+                                    Летняя рыбалка: как искать рыбу в жару
+                                </a>
+                            </h3>
                             <p class="card-text">
                                 Почему активность смещается на утро и вечер, как работает тень, глубина и аэрация, и какие приманки лучше оставить в коробке.
                             </p>
@@ -134,7 +143,11 @@
                                 <span class="meta-chip">Снасти</span>
                                 <span class="meta-chip">Спиннинг</span>
                             </div>
-                            <h3 class="card-title">Базовый набор спиннингиста без лишних покупок</h3>
+                            <h3 class="card-title">
+                                <a href="https://www.fishingsib.ru/articles/view/155286/">
+                                    Базовый набор спиннингиста без лишних покупок
+                                </a>
+                            </h3>
                             <p class="card-text">
                                 Как собрать рабочий комплект под щуку, окуня и судака: удилище, катушка, шнур, поводки и минимальный набор приманок.
                             </p>
@@ -159,7 +172,11 @@
                                 <span class="meta-chip">Насадки</span>
                                 <span class="meta-chip">Мирная рыба</span>
                             </div>
-                            <h3 class="card-title">Какие наживки и прикорм работают в разное время года</h3>
+                            <h3 class="card-title">
+                                <a href="https://agrozrk.ru/stati/kak-podobrat-sostav-prikormki-v-zavisimosti-ot-vremeni-goda/">
+                                    Какие наживки и прикорм работают в разное время года
+                                </a>
+                            </h3>
                             <p class="card-text">
                                 Подбор насадки под холодную и теплую воду, изменение ароматики и частые ошибки при стартовом закорме.
                             </p>
@@ -184,7 +201,11 @@
                                 <span class="meta-chip">Сезонность</span>
                                 <span class="meta-chip">Осень</span>
                             </div>
-                            <h3 class="card-title">Осенний хищник: где искать щуку, судака и окуня</h3>
+                            <h3 class="card-title">
+                                <a href="https://dzen.ru/a/aNTsWLHKTgK9bjSd">
+                                    Осенний хищник: где искать щуку, судака и окуня
+                                </a>
+                            </h3>
                             <p class="card-text">
                                 Как меняются стоянки рыбы при остывании воды, почему работают бровки и как подбирать темп проводки.
                             </p>
@@ -209,7 +230,11 @@
                                 <span class="meta-chip">Безопасность</span>
                                 <span class="meta-chip">Выезд</span>
                             </div>
-                            <h3 class="card-title">Что проверить перед выездом на водоем</h3>
+                            <h3 class="card-title">
+                                <a href="https://76.mchs.gov.ru/deyatelnost/poleznaya-informaciya/rekomendacii-naseleniyu/pravila-bezopasnogo-povedeniya-na-vode/bezopasnaya-rybalka">
+                                    Что проверить перед выездом на водоем
+                                </a>
+                            </h3>
                             <p class="card-text">
                                 Набор обязательных действий перед дорогой: прогноз, ветер, подход к берегу, связь, аптечка, фонарь и запасной комплект одежды.
                             </p>
